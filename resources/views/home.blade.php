@@ -12,7 +12,7 @@
 <body>
     
     <div class="container p-5 text-center">
-        <h1 class="mt-5">Hello world!</h1>
+        <h1 class="mt-5">{{$saluto}}</h1>
 
     </div>
     
