@@ -15,7 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $saluto = "Salve, Boolean!";
+    return view('home');
+})->name('home');
+;
 
-    return view('home', compact("saluto"));
-});
+Route::get("/features", function () {
+
+    return view("features");
+
+})->name('features');
+
+Route::get("/pricing", function () {
+
+    return view("pricing");
+
+})->name('pricing');
